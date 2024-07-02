@@ -17,23 +17,28 @@ return {
   },
   --
   {
-  	"williamboman/mason.nvim",
-  	opts = {
-  		ensure_installed = {
-  			"lua-language-server", "stylua",
-  			"html-lsp", "css-lsp" , "prettier",
+    "williamboman/mason.nvim",
+    opts = {
+      ensure_installed = {
+        "lua-language-server", "stylua",
+        "html-lsp", "css-lsp" , "prettier",
         "clangd"
-  		},
-  	},
+      },
+    },
   },
   --
   {
-  	"nvim-treesitter/nvim-treesitter",
-  	opts = {
-  		ensure_installed = {
-  			"vim", "lua", "vimdoc",
+    "nvim-treesitter/nvim-treesitter",
+    opts = {
+      ensure_installed = {
+        "vim", "lua", "vimdoc",
         "html", "css", "cpp"
-  		},
-  	},
+      },
+    },
+  },
+  --
+  {
+    "christoomey/vim-tmux-navigator",
+    lazy = false
   },
 }
